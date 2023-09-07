@@ -63,9 +63,10 @@ while True:
     print("fps: ", fps)
 
     cv2.imshow("Image", img)
-    cv2.waitKey(1)
+    if cv2.waitKey(1) == ord('q'):
+        break
 
-video.release()
+
 
 
 
